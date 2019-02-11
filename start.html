@@ -7,20 +7,25 @@
   <body>
     <h1>Welcome to weTranslate</h1>
     <img src="thY8SZPYN5.jpg" alt="languages">
-    <h2>Translate these specific phrases</h2>
+    <h2 id="translatehead" >Translate these specific phrases</h2>
     <p id="greeting">Hello</p>
-    <button type="button" onClick="toEnglish('Hello')"
-     id="toEnglish">English</button>
-    <button type="button" onClick="toEnglish('Bonjour')" id="toFrench">French</button>
-    <button type="button" onClick="toEnglish('Hola')" id="toSpanish">Spanish</button>
-    <button type="button" onClick="toEnglish('Привет')" id="toRussian">Russian</button>
+    <button type="button" onClick="toEnglish('Hello')" id="translate1">English</button>
+    <button type="button" onClick="toEnglish('Bonjour')" id="translate2">French</button>
+    <button type="button" onClick="toEnglish('Hola')" id="translate3">Spanish</button>
+    <button type="button" onClick="toEnglish('Привет')" id="translate4">Russian</button>
     <br/>
     <p id = "goodbye"> Goodbye</p>
-    <button type="button" onClick="toEnglish2('Goodbye')" id="toEnglish2">English</button>
-    <button type="button" onClick="toEnglish2('Au Revoir')" id="toFrench2">French</button>
-    <button type="button" onClick="toEnglish2('Adiós')" id="toSpanish2">Spanish</button>
-    <button type="button" onClick="toEnglish2('До свидания')" id="toRussian2">Russian</button>
+    <button type="button" onClick="toEnglish2('Goodbye')" id="translate5">English</button>
+    <button type="button" onClick="toEnglish2('Au Revoir')" id="translate6">French</button>
+    <button type="button" onClick="toEnglish2('Adiós')" id="translate7">Spanish</button>
+    <button type="button" onClick="toEnglish2('До свидания')" id="translate8">Russian</button>
     <script src="translateEnglish.js"></script>
-
-  </body>
+    <h3 onclick="removePB()">Practice what you've learned (Click here to start)</h3>
+    <p hidden id="test">
+      <script type="text/javascript">randomWord()</script>
+    </p>
+  <button type="button" hidden onClick="isFrench()" id="hid1">French</button>
+    <button type="button" hidden onClick="isSpanish()" id="hid2">Spanish</button>
+    <button type="button" hidden onClick="isRussian()" id="hid3">Russian</button>
+</body>
 </html>
